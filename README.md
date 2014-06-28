@@ -13,7 +13,7 @@ to get started,
 
 
 this will download the repo script (a python script), which first pulls the repo bundle from google's
-https://gerrit.googlesource.com/git-repo repository (placed in `pwd`/.repo/repo).
+https://gerrit.googlesource.com/git-repo repository (placed in ./.repo/repo).
 
 it also git-clone's this repository into .repo/manifests.git (and then checks out the files to 
 .repo/manifests), and sym-links manifests/default.xml to .repo/manifest.xml.
