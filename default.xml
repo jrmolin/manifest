@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+      fetch="https://android.googlesource.com/" />
+  <remote name="bitbucket"
+      fetch="https://bitbucket.org" />
+  <remote name="github"
+      fetch="https://github.com" />
+  <remote name="googlesource"
+      fetch="https://gerrit.googlesource.com/" />
+  <default revision="refs/tags/android-4.4.2_r2"
+           remote="aosp"
+           sync-j="4" />
+
+  <!-- example showing how to pull some aosp packages -->
+  <!--
+  <project path="external/jack" name="platform/external/jack" />
+  -->
+
+  <!-- example showing how to pull a different googlesource package -->
+  <!--
+  <project path="external/gitiles" name="gitiles" revision="refs/heads/master" remote="googlesource"/>
+  -->
+
+  <!-- example showing how to pull a github package -->
+  <!--
+  <project path="external/buck" name="facebook/buck" revision="refs/heads/master" remote="github"/>
+  -->
+
+</manifest>
